@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.fxml.ViewController">
+    <children>
+        <ImageView fitHeight="284.0" fitWidth="284.0" layoutX="-8.0" layoutY="-8.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/viewImage.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="357.0" layoutY="75.0" prefHeight="389.0" prefWidth="405.0" style="-fx-background-color: white;">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="389.0" prefWidth="405.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="418.0" text="-Appointment Details-">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="461.0" text="Your Appointment is on:">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="dateLabel" alignment="CENTER" prefHeight="35.0" prefWidth="389.0" text="label">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label text="at">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="timeLabel" alignment="CENTER" layoutX="20.0" layoutY="125.0" prefHeight="35.0" prefWidth="389.0" text="label">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="489.0" text="With">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label fx:id="specialistLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="387.0" text="label">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                  <Label text="See You Soon!">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <Button fx:id="returnBtn" layoutX="491.0" layoutY="518.0" mnemonicParsing="false" onAction="#menu" text="Return to Menu">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Pane layoutX="42.0" layoutY="219.0" prefHeight="245.0" prefWidth="284.0" style="-fx-background-color: white;">
+            <children>
+                <Label fx:id="yourNameLabel" alignment="CENTER" layoutX="1.0" layoutY="102.0" prefHeight="21.0" prefWidth="284.0" text="Label">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="yourNumberLabel" alignment="CENTER" layoutY="172.0" prefHeight="21.0" prefWidth="284.0" text="Label">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="82.0" layoutY="14.0" text="-Personal Details-">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
